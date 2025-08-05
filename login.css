@@ -1,0 +1,252 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    justify-content: space-between; /* Allow space between header, main content, and footer */
+    align-items: center; /* Center the login form horizontally */
+}
+
+/* header.css */
+header {
+    background-color: #2c3e50;  /* Dark blue-gray for header */
+    color: white;
+    padding: 15px 20px;
+    width: 100%; /* Ensures the header spans the entire width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Space out the logo and nav */
+    align-items: center; /* Vertically align items */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #3498db; /* Blue color on hover */
+    text-decoration: underline;
+}
+
+header .search-bar input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    outline: none;
+}
+
+header .search-bar input:focus {
+    border-color: #3498db; /* Blue border on focus */
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header .search-bar input {
+        width: 100%;
+    }
+}
+
+
+/* Login Page Style */
+.login {
+    max-width: 400px;
+    width: 100%; /* Ensures the form is responsive */
+    margin: 30px 0; /* Margin for top and bottom spacing */
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.login h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #3498db; /* Blue border on focus */
+    outline: none;
+}
+
+/* Button */
+button.btn-login {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-login:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Sign Up Link */
+.login p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login p a {
+    color: #3498db; /* Blue link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login p a:hover {
+    color: #2980b9; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Footer Style */
+footer {
+    background-color: #2c3e50;  /* Dark blue-gray footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Ensures the footer spans the full width */
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+    color: #3498db; /* Blue color on hover */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login {
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    header nav ul {
+        display: block;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header .search-bar input {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    footer .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-links a {
+        margin: 5px 0;
+    }
+}
+/* Button styles */
+button.btn-login, button.btn-guest {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px; /* Add space between buttons */
+}
+
+button.btn-login:hover, button.btn-guest:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

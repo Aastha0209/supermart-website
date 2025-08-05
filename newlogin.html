@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mart User Account</title>
+    <link rel="stylesheet" href="newlogin.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div class="container login-page">
+        <h2>Login to Your Account</h2>
+        <form action="/login" method="POST">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="btn">Login</button>
+            
+            <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+        </form>
+        
+        <p>Don't have an account? <a href="/register">Sign up here</a></p>
+    </div>
+
+    <!-- Registration Page -->
+    <div class="container register-page">
+        <h2>Create Your Account</h2>
+        <form action="/register" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm_password" required>
+            
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- User Dashboard -->
+    <div class="container dashboard-page">
+        <h2>User Dashboard</h2>
+
+        <!-- Profile Information -->
+        <div class="section">
+            <h3>Profile Information</h3>
+            <form action="/update-profile" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" value="John Doe" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" value="johndoe@example.com" required>
+                
+                <button type="submit" class="btn">Update Profile</button>
+            </form>
+        </div>
+
+        <!-- Address Book -->
+        <div class="section">
+            <h3>Address Book</h3>
+            <div class="address-item">
+                <p><strong>Home Address</strong></p>
+                <p>123 Main Street, City, State, ZIP</p>
+                <button class="btn">Edit Address</button>
+            </div>
+            <button class="btn">Add New Address</button>
+        </div>
+
+        <!-- Order History -->
+        <div class="section">
+            <h3>Your Orders</h3>
+            <div class="order-item">
+                <p>Order #12345 - <strong>Status: Delivered</strong></p>
+                <p>Date: 01/10/2024 | Total: $50.00</p>
+                <a href="/order-details/12345" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="section">
+            <h3>Payment Methods</h3>
+            <div class="payment-item">
+                <p><strong>Visa **** **** **** 1234</strong></p>
+                <button class="btn">Remove</button>
+            </div>
+            <button class="btn">Add New Payment Method</button>
+        </div>
+
+        <!-- Sign Out -->
+        <button class="btn">Sign Out</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Supermart</title>
+    <link rel="stylesheet" href="welcome.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Supermart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="6.html">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="cart1.html">Cart (0)</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+        </div>
+    </header> <br> <br> <br>
+
+    <!-- Main Section -->
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <h2>Welcome, <span id="full-name">User Name</span>!</h2>
+            <p>Thank you for logging in. You can now enjoy shopping, check your cart, and manage your account.</p>
+            <br> <br>
+
+            <!-- User Navigation Links -->
+            <div class="user-nav">
+                <a href="category.html" class="button">Browse Products</a>
+                <a href="cart1.php" class="button">View Cart</a>
+                <a href="account.html" class="button">Manage Account</a>
+            </div>
+        </div>
+    </section>
+    <br> <br> <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; 2024 Supermart. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script to display the user's name (if passed from PHP) -->
+    <script>
+        // Assuming that the user's name is stored in a session (if using PHP, you can set this dynamically)
+        // You can use PHP to insert the username into the `span` below, or set it via JS.
+        document.getElementById('user-name').textContent = "<?php echo htmlspecialchars($_SESSION['user_name']); ?>";
+    </script>
+
+</body>
+</html>

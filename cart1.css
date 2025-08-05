@@ -1,0 +1,209 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;  /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Dark blue-gray for header */
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #3498db; /* Blue on hover */
+    text-decoration: underline;
+}
+
+/* Cart Page Styles */
+.cart {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.cart h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Cart Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table td {
+    border-bottom: 1px solid #ddd;
+}
+
+table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+table td button {
+    background-color: #3498db; /* Blue for remove item button */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+table td button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Cart Summary Section */
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.cart-summary p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart-summary .total-price {
+    font-size: 20px;
+    color: #3498db; /* Blue for total price */
+}
+
+.checkout-btn {
+    background-color: #3498db; /* Blue checkout button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Empty Cart Styles */
+.empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #7f8c8d; /* Light gray */
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50; /* Dark blue-gray footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #3498db; /* Blue on hover */
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart {
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    .cart-summary {
+        text-align: left;
+    }
+
+    table td button {
+        padding: 8px 10px;
+    }
+}

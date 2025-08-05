@@ -1,0 +1,169 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffcc66;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: #ffefd5;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    color: #ff9933;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Baby Products Section */
+.baby-products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.baby-products h3 {
+    font-size: 28px;
+    color: #ff9933;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 18px;
+    color: #ff9933;
+    margin-bottom: 10px;
+}
+
+.product-card .description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #ff9933;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #e68a00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 14px;
+}

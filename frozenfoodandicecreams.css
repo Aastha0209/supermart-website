@@ -1,0 +1,112 @@
+/* frozenfoodandicecreams.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.banner {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+}
+
+.products {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    color: #007BFF;
+    font-size: 1.2em;
+}
+
+.product-card .description {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
